@@ -134,6 +134,12 @@ files:
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
+# Launcher3
+  -
+    source:      '/packages/apps/Launcher3/res/values/*strings.xml'
+    translation: '/%original_path%-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
 # OmniJaws
   -
     source:      '/packages/services/OmniJaws/res/values/*strings.xml'
