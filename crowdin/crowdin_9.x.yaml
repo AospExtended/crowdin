@@ -1,8 +1,8 @@
-# crowdin-8.1.x.yaml
+# crowdin-9.x.yaml
 #
 # Crowdin configuration file for AospExtended
 #
-# Copyright (C) 2017 AospExtended Project
+# Copyright (C) 2018 AospExtended Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -131,24 +131,6 @@ files:
 # FMRadio
   -
     source:      '/packages/apps/FMRadio/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-# Launcher3
-  -
-    source:      '/packages/apps/Launcher3/res/values/*strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-# OmniJaws
-  -
-    source:      '/packages/services/OmniJaws/res/values/*strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-#PackageInstaller
-  -
-    source:      '/packages/apps/PackageInstaller/res/values/custom_strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
