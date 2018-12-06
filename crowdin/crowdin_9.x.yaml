@@ -134,6 +134,18 @@ files:
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
+# SmartNavSettings
+  -
+    source:      '/packages/apps/SmartNavSettings/res/values/strings.xml'
+    translation: '/%original_path%-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+# SmartNav
+  -
+    source:      '/packages/apps/SmartNav/res/values/strings.xml'
+    translation: '/%original_path%-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
 # Updates
   -
     source:      '/packages/apps/Updates/app/src/main/res/values/strings.xml'
