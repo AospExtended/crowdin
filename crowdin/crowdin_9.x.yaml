@@ -128,6 +128,12 @@ files:
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
+# Devicesettings
+  -
+    source:      '/packages/resources/devicesettings/res/values/strings.xml'
+    translation: '/%original_path%-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
 # FMRadio
   -
     source:      '/packages/apps/FMRadio/res/values/custom_strings.xml'
