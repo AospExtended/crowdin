@@ -1,9 +1,10 @@
 #
-# Crowdin configuration file for PixelExperience
+# Crowdin configuration file for AospExtended
 #
 # Copyright (C) 2014-2016 The CyanogenMod Project
 # Copyright (C) 2017-2020 The LineageOS Project
 # Copyright (C) 2017-2020 The PixelExperience Project
+# Copyright (C) 2021 AospExtended ROM
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,13 +20,13 @@
 
 api_token_env: CROWDIN_API_KEY
 base_path_env: CROWDIN_BASE_PATH
-project_id: 296617
+project_id: 279323
 preserve_hierarchy: true
 
 files:
 # frameworks/base/packages/SystemUI
   -
-    source:      '/frameworks/base/packages/SystemUI/res/values/custom_strings.xml'
+    source:      '/frameworks/base/packages/SystemUI/res/values/ex_strings.xml'
     translation: '/frameworks/base/packages/SystemUI/res/values-%android_code%/%original_file_name%'
     languages_mapping: &anchor
       android_code:
@@ -240,58 +241,60 @@ files:
         # Zulu
         zu: zu
 
+
+  # frameworks/base/packages/SystemUI
+  -
+    source:      '/frameworks/base/packages/SystemUI/res/values/ex_strings.xml'
+    translation: '/frameworks/base/packages/SystemUI/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
   # frameworks/base/packages/SettingsLib
   -
-    source:      '/frameworks/base/packages/SettingsLib/res/values/custom_strings.xml'
+    source:      '/frameworks/base/packages/SettingsLib/res/values/ex_strings.xml'
     translation: '/frameworks/base/packages/SettingsLib/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  # packages/apps/FaceUnlockService
-  -
-    source:      '/packages/apps/FaceUnlockService/app/src/main/res/values/custom_strings.xml'
-    translation: '/packages/apps/FaceUnlockService/app/src/main/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  # packages/apps/ElmyraService
-  -
-    source:      '/packages/apps/ElmyraService/res/values/custom_strings.xml'
-    translation: '/packages/apps/ElmyraService/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   # packages/apps/Settings
   -
-    source:      '/packages/apps/Settings/res/values/custom_strings.xml'
+    source:      '/packages/apps/Settings/res/values/ex_strings.xml'
     translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
+    languages_mapping: *anchor    
 
-  # packages/apps/Settings - Plurals
+  # packages/apps/Extensions
   -
-    source:      '/packages/apps/Settings/res/values/custom_plurals.xml'
-    translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  # packages/apps/TouchGestures
-  -
-    source:      '/packages/apps/TouchGestures/res/values/custom_strings.xml'
-    translation: '/packages/apps/TouchGestures/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
+    source:      '/packages/apps/Extensions/res/values/ex_strings.xml'
+    translation: '/packages/apps/Extensions/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor  
+    
+    
   # packages/apps/Updates
   -
-    source:      '/packages/apps/Updates/res/values/custom_strings.xml'
+    source:      '/packages/apps/Updates/res/values/ex_strings.xml'
     translation: '/packages/apps/Updates/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
-  # packages/providers/DownloadProvider
+  # packages/apps/FaceUnlockService
   -
-    source:      '/packages/providers/DownloadProvider/res/values/custom_strings.xml'
-    translation: '/packages/providers/DownloadProvider/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
+    source:      '/packages/apps/FaceUnlockService/app/src/main/res/values/ex_strings.xml'
+    translation: '/packages/apps/FaceUnlockService/app/src/main/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor    
 
-  # packages/resources/devicesettings-custom
+
+  # packages/apps/Gallery2
   -
-    source:      '/packages/resources/devicesettings-custom/res/values/custom_strings.xml'
-    translation: '/packages/resources/devicesettings-custom/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
+    source:      '/packages/apps/Gallery2/res/values/custom_strings.xml'
+    translation: '/packages/apps/Gallery2/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor      
 
+  # packages/apps/Launcher3
+  -
+    source:      '/packages/apps/Launcher3/res/values/ex_strings.xml'
+    translation: '/packages/apps/Launcher3/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor       
+
+  # packages/apps/Launcher3 - custom_strings.xml
+  -
+    source:      '/packages/apps/Launcher3/res/values/custom_strings.xml'
+    translation: '/packages/apps/Launcher3/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor           
   
