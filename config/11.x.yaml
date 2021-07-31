@@ -24,10 +24,10 @@ project_id: 279323
 preserve_hierarchy: true
 
 files:
-# frameworks/base/packages/SystemUI
+# frameworks/base
   -
-    source:      '/frameworks/base/packages/SystemUI/res/values/ex_strings.xml'
-    translation: '/frameworks/base/packages/SystemUI/res/values-%android_code%/%original_file_name%'
+    source:      '/frameworks/base/core/res/res/values/ex_strings.xml'
+    translation: '/frameworks/base/core/res/res/values-%android_code%/%original_file_name%'
     languages_mapping: &anchor
       android_code:
         # Afrikaans
@@ -262,7 +262,7 @@ files:
 
   # packages/apps/Extensions
   -
-    source:      '/packages/apps/Extensions/res/values/ex_strings.xml'
+    source:      '/packages/apps/Extensions/res/values/strings.xml'
     translation: '/packages/apps/Extensions/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor  
     
