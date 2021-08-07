@@ -296,5 +296,10 @@ files:
   -
     source:      '/packages/apps/Launcher3/res/values/custom_strings.xml'
     translation: '/packages/apps/Launcher3/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor           
-  
+    languages_mapping: *anchor
+
+  # packages/apps/ThemePicker
+  -
+    source:      '/packages/apps/ThemePicker/res/values/ex_strings.xml'
+    translation: '/packages/apps/ThemePicker/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor  
